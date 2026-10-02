@@ -1,43 +1,108 @@
 [gd_scene format=3 uid="uid://wqce44tbhwhl"]
 
+[ext_resource type="Script" uid="uid://clavm7xwxqbau" path="res://mario_.gd" id="1_w74su"]
+
+[sub_resource type="Animation" id="Animation_t4dow"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeftLeg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(139, 32)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RightLeg:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(163, 40)]
+}
+
+[sub_resource type="Animation" id="Animation_w74su"]
+resource_name = "walk"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeftLeg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.18),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(139, 32), Vector2(100, 33)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RightLeg:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.18),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(163, 40), Vector2(193, 40)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wrvex"]
+_data = {
+&"RESET": SubResource("Animation_t4dow"),
+&"walk": SubResource("Animation_w74su")
+}
+
 [node name="Mario" type="Node2D" unique_id=1558179282]
+script = ExtResource("1_w74su")
 
 [node name="LeftLeg" type="Node2D" parent="." unique_id=57449104]
 position = Vector2(139, 32)
 
 [node name="LeftBoot" type="ColorRect" parent="LeftLeg" unique_id=1038941323]
-offset_left = -99.0
-offset_top = -12.0
-offset_right = 40.7677
-offset_bottom = 79.93237
-rotation = 1.0107557
+offset_left = -109.99999
+offset_top = -0.9999995
+offset_right = 6.2887115
+offset_bottom = 67.99381
+rotation = 1.5314071
 scale = Vector2(0.53087074, 0.3216848)
 color = Color(0.5801133, 0.2087766, 0.06577903, 1)
 
 [node name="LeftLeg" type="ColorRect" parent="LeftLeg" unique_id=1521058318]
-offset_left = -93.0
-offset_top = 48.0
-offset_right = -38.0
-offset_bottom = 76.0
+offset_left = -133.0
+offset_top = 51.0
+offset_right = -78.0
+offset_bottom = 79.0
 color = Color(0.2725143, 0.27242044, 0.1632652, 1)
 
 [node name="RightLeg" type="Node2D" parent="." unique_id=793694633]
 position = Vector2(163, 40)
 
 [node name="RightBoot" type="ColorRect" parent="RightLeg" unique_id=714505827]
-offset_left = -257.0
-offset_top = 44.99997
-offset_right = -202.0
-offset_bottom = 75.5036
+offset_left = -185.0
+offset_top = 42.0
+offset_right = -130.0
+offset_bottom = 72.50363
 rotation = 0.0009769362
 color = Color(0.2725143, 0.27242044, 0.1632652, 1)
 
 [node name="RightLeg" type="ColorRect" parent="RightLeg" unique_id=669949702]
-offset_left = -161.0
-offset_top = -2.0000305
-offset_right = -17.732422
-offset_bottom = 71.64603
-rotation = 2.1748543
+offset_left = -160.0
+offset_top = -21.0
+offset_right = -16.732422
+offset_bottom = 52.646057
+rotation = 1.5410997
 scale = Vector2(0.53087074, 0.3216848)
 color = Color(0.5801133, 0.2087766, 0.06577903, 1)
 
@@ -76,3 +141,7 @@ offset_right = -106.00006
 offset_bottom = -112.0
 scale = Vector2(0.9509804, 0.8407642)
 color = Color(0.43156308, 0.17645416, 0.05555305, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1652439990]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_wrvex")
