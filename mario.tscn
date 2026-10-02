@@ -4,54 +4,51 @@
 
 [node name="LeftLeg" type="Node2D" parent="." unique_id=57449104]
 position = Vector2(139, 32)
-metadata/_edit_group_ = true
 
 [node name="LeftBoot" type="ColorRect" parent="LeftLeg" unique_id=1038941323]
-offset_left = 400.0
-offset_top = 308.0
-offset_right = 539.7677
-offset_bottom = 399.93237
+offset_left = -99.0
+offset_top = -12.0
+offset_right = 40.7677
+offset_bottom = 79.93237
 rotation = 1.0107557
 scale = Vector2(0.53087074, 0.3216848)
 color = Color(0.5801133, 0.2087766, 0.06577903, 1)
 
 [node name="LeftLeg" type="ColorRect" parent="LeftLeg" unique_id=1521058318]
-offset_left = 409.0
-offset_top = 373.0
-offset_right = 464.0
-offset_bottom = 401.0
+offset_left = -93.0
+offset_top = 48.0
+offset_right = -38.0
+offset_bottom = 76.0
 color = Color(0.2725143, 0.27242044, 0.1632652, 1)
 
 [node name="RightLeg" type="Node2D" parent="." unique_id=793694633]
 position = Vector2(163, 40)
-metadata/_edit_group_ = true
 
 [node name="RightBoot" type="ColorRect" parent="RightLeg" unique_id=714505827]
-offset_left = 289.0
-offset_top = 366.0
-offset_right = 344.0
-offset_bottom = 396.50363
+offset_left = -257.0
+offset_top = 44.99997
+offset_right = -202.0
+offset_bottom = 75.5036
 rotation = 0.0009769362
 color = Color(0.2725143, 0.27242044, 0.1632652, 1)
 
 [node name="RightLeg" type="ColorRect" parent="RightLeg" unique_id=669949702]
-offset_left = 348.0
-offset_top = 319.0
-offset_right = 491.26758
-offset_bottom = 392.64606
+offset_left = -161.0
+offset_top = -2.0000305
+offset_right = -17.732422
+offset_bottom = 71.64603
 rotation = 2.1748543
 scale = Vector2(0.53087074, 0.3216848)
 color = Color(0.5801133, 0.2087766, 0.06577903, 1)
 
 [node name="Body" type="Node2D" parent="." unique_id=2025674425]
 position = Vector2(149, 175)
-metadata/_edit_group_ = true
 
 [node name="Head" type="ColorRect" parent="Body" unique_id=1426201261]
-offset_left = 327.0
-offset_top = 27.0
-offset_right = 407.0
-offset_bottom = 103.0
+offset_left = -189.0
+offset_top = -268.0
+offset_right = -109.0
+offset_bottom = -192.0
 color = Color(0.59923625, 0.46413058, 0.21799105, 1)
 
 [node name="Hat" type="ColorRect" parent="Body/Head" unique_id=1759007659]
@@ -73,8 +70,9 @@ offset_bottom = 46.0
 color = Color(0.8469167, 0.37509435, 0.21876758, 1)
 
 [node name="Body" type="ColorRect" parent="Body" unique_id=268382672]
-offset_left = 330.0
-offset_top = 100.0
-offset_right = 409.0
-offset_bottom = 191.0
+offset_left = -185.00006
+offset_top = -203.0
+offset_right = -106.00006
+offset_bottom = -112.0
+scale = Vector2(0.9509804, 0.8407642)
 color = Color(0.43156308, 0.17645416, 0.05555305, 1)
