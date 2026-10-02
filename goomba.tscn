@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://ckjtm7onctuvb"]
+
+[node name="Goomba" type="Node2D" unique_id=42831783]
+metadata/_edit_group_ = true
+
+[node name="Left leg" type="Node2D" parent="." unique_id=1655523694]
+metadata/_edit_group_ = true
+
+[node name="leg" type="ColorRect" parent="Left leg" unique_id=1169829196]
+offset_left = -14.000004
+offset_top = 10.0
+offset_right = 24.999996
+offset_bottom = 62.0
+rotation = 1.5172051
+color = Color(0.4117647, 0.2, 0.105882354, 1)
+
+[node name="Right leg" type="Node2D" parent="." unique_id=1978592237]
+position = Vector2(25, 26)
+metadata/_edit_group_ = true
+
+[node name="leg" type="ColorRect" parent="Right leg" unique_id=1146236961]
+offset_left = -20.0
+offset_top = -19.0
+offset_right = 26.0
+offset_bottom = 21.0
+color = Color(0.41001412, 0.20115352, 0.10631456, 1)
+
+[node name="Body" type="Node2D" parent="." unique_id=1012405737]
+metadata/_edit_group_ = true
+
+[node name="Head" type="ColorRect" parent="Body" unique_id=1125068947]
+offset_left = -43.0
+offset_top = -48.0
+offset_right = 29.0
+offset_bottom = 24.0
+color = Color(0.4117647, 0.2, 0.105882354, 1)
+
+[node name="eye 2" type="ColorRect" parent="Body/Head" unique_id=638273692]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 12.0
+offset_right = 61.0
+offset_bottom = 29.0
+
+[node name="eye 1" type="ColorRect" parent="Body/Head" unique_id=1351543127]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 13.0
+offset_right = 30.0
+offset_bottom = 33.0
+
+[node name="mouth" type="ColorRect" parent="Body/Head" unique_id=109058692]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 48.0
+offset_right = 58.0
+offset_bottom = 57.0
