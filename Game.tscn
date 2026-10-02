@@ -9,6 +9,12 @@
 radius = 56.25
 height = 291.6667
 
+[sub_resource type="Curve2D" id="Curve2D_u44n3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 479, 471, 0, 0, 0, 0, 627, 474, 0, 0, 0, 0, 627, 461, 0, 0, 0, 0, 478, 459, 0, 0, 0, 0, 479, 471)
+}
+point_count = 5
+
 [node name="Game" type="Node2D" unique_id=1211680814]
 
 [node name="Node2D" parent="." unique_id=1102417325 instance=ExtResource("1_u44n3")]
@@ -30,6 +36,13 @@ shape = SubResource("CapsuleShape2D_mic76")
 
 [node name="Camera2D" type="Camera2D" parent="Mario" unique_id=1223468650]
 
+[node name="Spawn" type="Path2D" parent="." unique_id=546523940]
+curve = SubResource("Curve2D_u44n3")
+
+[node name="spawn1" type="PathFollow2D" parent="Spawn" unique_id=28855465]
+unique_name_in_owner = true
+position = Vector2(479, 471)
+rotation = 0.020267494
+
 [node name="Goomba" parent="." unique_id=804491056 instance=ExtResource("4_sb48q")]
-position = Vector2(478, 376)
-collision_mask = 4
+position = Vector2(554, 456)
