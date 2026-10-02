@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cy02v78dnh8x1"]
 
+[ext_resource type="PackedScene" uid="uid://dvjob0ik8yu3x" path="res://Background.tscn" id="1_u44n3"]
 [ext_resource type="PackedScene" uid="uid://wqce44tbhwhl" path="res://mario.tscn" id="1_wbfu4"]
+[ext_resource type="Script" uid="uid://bw5ijkhwv783i" path="res://mario.gd" id="2_sb48q"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mic76"]
 radius = 56.25
@@ -8,12 +10,17 @@ height = 291.6667
 
 [node name="Game" type="Node2D" unique_id=1211680814]
 
+[node name="Node2D" parent="." unique_id=1102417325 instance=ExtResource("1_u44n3")]
+
 [node name="Mario" type="CharacterBody2D" parent="." unique_id=1012137877]
-position = Vector2(184, 95)
+position = Vector2(87, 554)
 scale = Vector2(0.32, 0.23999992)
+script = ExtResource("2_sb48q")
+metadata/_edit_group_ = true
 
 [node name="Mario" parent="Mario" unique_id=1558179282 instance=ExtResource("1_wbfu4")]
 position = Vector2(-6.25, -4.166687)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mario" unique_id=1899982216]
+position = Vector2(-3.125, 8.333336)
 shape = SubResource("CapsuleShape2D_mic76")
