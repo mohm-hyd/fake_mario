@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dvjob0ik8yu3x"]
+
+[ext_resource type="PackedScene" uid="uid://coubts0fr4e2" path="res://platform.tscn" id="1_dpw2a"]
+[ext_resource type="PackedScene" uid="uid://b48jlsd8y6sg6" path="res://verticalrect.tscn" id="2_jqsg2"]
+
+[node name="Node2D" type="Node2D" unique_id=1102417325]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=331598159]
+offset_right = 1151.0
+offset_bottom = 645.0
+color = Color(0.47219574, 0.6953982, 0.7652517, 1)
+
+[node name="platform" parent="." unique_id=974131388 instance=ExtResource("1_dpw2a")]
+position = Vector2(106, 616)
+
+[node name="platform2" parent="." unique_id=468113116 instance=ExtResource("1_dpw2a")]
+position = Vector2(332, 561)
+
+[node name="platform3" parent="." unique_id=517504220 instance=ExtResource("1_dpw2a")]
+position = Vector2(549, 512)
+
+[node name="RigidBody2D" parent="." unique_id=432393565 instance=ExtResource("2_jqsg2")]
+position = Vector2(680, 544)
+
+[node name="RigidBody2D2" parent="." unique_id=1696418714 instance=ExtResource("2_jqsg2")]
+position = Vector2(743, 506)
+
+[node name="RigidBody2D3" parent="." unique_id=1189322339 instance=ExtResource("2_jqsg2")]
+position = Vector2(806, 469)
+
+[node name="platform4" parent="." unique_id=2042589380 instance=ExtResource("1_dpw2a")]
+position = Vector2(981, 445)
+
+[node name="RigidBody2D4" parent="." unique_id=1617239707 instance=ExtResource("2_jqsg2")]
+position = Vector2(1144, 466)
