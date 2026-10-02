@@ -28,6 +28,7 @@ script = ExtResource("2_sb48q")
 metadata/_edit_group_ = true
 
 [node name="Mario" parent="Mario" unique_id=1558179282 instance=ExtResource("1_wbfu4")]
+unique_name_in_owner = true
 position = Vector2(-6.25, -4.166687)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mario" unique_id=1899982216]

@@ -5,14 +5,20 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+var jumping = false
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
+	if is_on_floor():
+		jumping = false
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
 	# Handle jump.
 	if Input.is_action_just_pressed("up") and is_on_floor():
+		jumping= true
+		%Mario.play_jump_animation()
 		velocity.y = JUMP_VELOCITY
 
 	# Iterate through all collisions that occurred this frame
@@ -47,3 +53,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	
+	if velocity.length() > 0.0:
+		if !jumping :
+			%Mario.play_walk_animation()
+	else :
+		%Mario.play_idle_animation()
