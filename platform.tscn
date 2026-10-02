@@ -10,6 +10,9 @@ gradient = SubResource("Gradient_5ajho")
 size = Vector2(64.297676, 63)
 
 [node name="platform" type="RigidBody2D" unique_id=974131388]
+collision_layer = 4
+collision_mask = 0
+gravity_scale = 0.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=612581074]
 position = Vector2(1.5, 0)
