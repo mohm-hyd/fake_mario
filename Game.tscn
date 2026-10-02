@@ -15,6 +15,7 @@ height = 291.6667
 [node name="Mario" type="CharacterBody2D" parent="." unique_id=1012137877]
 position = Vector2(87, 554)
 scale = Vector2(0.32, 0.23999992)
+collision_mask = 7
 script = ExtResource("2_sb48q")
 metadata/_edit_group_ = true
 
@@ -24,3 +25,5 @@ position = Vector2(-6.25, -4.166687)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mario" unique_id=1899982216]
 position = Vector2(-3.125, 8.333336)
 shape = SubResource("CapsuleShape2D_mic76")
+
+[node name="Camera2D" type="Camera2D" parent="Mario" unique_id=1223468650]
