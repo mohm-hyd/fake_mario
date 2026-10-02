@@ -5,9 +5,14 @@
 
 [node name="Node2D" type="Node2D" unique_id=1102417325]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=331598159]
-offset_right = 1151.0
-offset_bottom = 645.0
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2011232663]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=331598159]
+offset_left = -151.0
+offset_top = -57.0
+offset_right = 1376.0
+offset_bottom = 814.0
 color = Color(0.47219574, 0.6953982, 0.7652517, 1)
 
 [node name="platform" parent="." unique_id=974131388 instance=ExtResource("1_dpw2a")]
@@ -33,3 +38,45 @@ position = Vector2(981, 445)
 
 [node name="RigidBody2D4" parent="." unique_id=1617239707 instance=ExtResource("2_jqsg2")]
 position = Vector2(1144, 466)
+
+[node name="platform5" parent="." unique_id=785498361 instance=ExtResource("1_dpw2a")]
+position = Vector2(1327, 439)
+
+[node name="platform7" parent="." unique_id=701926031 instance=ExtResource("1_dpw2a")]
+position = Vector2(1872, 439)
+
+[node name="platform6" parent="." unique_id=1099819877 instance=ExtResource("1_dpw2a")]
+position = Vector2(1598, 438)
+
+[node name="RigidBody2D5" parent="." unique_id=1153261933 instance=ExtResource("2_jqsg2")]
+position = Vector2(2054, 481)
+
+[node name="RigidBody2D6" parent="." unique_id=1609877366 instance=ExtResource("2_jqsg2")]
+position = Vector2(2151, 446)
+
+[node name="RigidBody2D7" parent="." unique_id=2033673073 instance=ExtResource("2_jqsg2")]
+position = Vector2(2249, 480)
+
+[node name="RigidBody2D8" parent="." unique_id=848231761 instance=ExtResource("2_jqsg2")]
+position = Vector2(2345, 432)
+
+[node name="RigidBody2D9" parent="." unique_id=671964523 instance=ExtResource("2_jqsg2")]
+position = Vector2(2438, 473)
+
+[node name="platform8" parent="." unique_id=1460719841 instance=ExtResource("1_dpw2a")]
+position = Vector2(2602, 381)
+
+[node name="platform9" parent="." unique_id=706270424 instance=ExtResource("1_dpw2a")]
+position = Vector2(2847, 438)
+
+[node name="platform10" parent="." unique_id=1123081508 instance=ExtResource("1_dpw2a")]
+position = Vector2(3101, 498)
+
+[node name="RigidBody2D10" parent="." unique_id=135125591 instance=ExtResource("2_jqsg2")]
+position = Vector2(3242, 539)
+
+[node name="RigidBody2D11" parent="." unique_id=1930150332 instance=ExtResource("2_jqsg2")]
+position = Vector2(3306, 538)
+
+[node name="RigidBody2D12" parent="." unique_id=825543953 instance=ExtResource("2_jqsg2")]
+position = Vector2(3368, 537)
